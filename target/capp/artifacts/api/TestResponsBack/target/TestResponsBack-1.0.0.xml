@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/testLogRespond" name="TestRespondBack" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/return">
+        <inSequence>
+            <log level="full">
+                <property name="STATUS" value="Invoking the TestRespondBack API"/>
+            </log>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
